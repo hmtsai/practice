@@ -1,0 +1,31 @@
+
+##################################################################################
+# [main/submodules] working directory are clean:
+# and you wish update from remote origin to your local [main/submodules] working directory
+##################################################################################
+$ git pull --rebase && git submodule foreach 'git pull --rebase'
+
+##################################################################################
+# check [main/submodules] status
+# check [main/submodules] diff
+##################################################################################
+$ git status && git submodule foreach 'git status'
+$ git diff --submodule=diff
+(if only git diff, you will see hash value different)
+
+##################################################################################
+# you completed your task, and the task modified files in main and submodules
+# now you want to commit the changes of them
+##################################################################################
+
+1. go to submodules directories, commit each of them first
+$ git commit -a -m 'sumodules modify'
+
+2. go to main, check status, you will see (new commit, the new hash of submodule), again commit each of them.
+$ git commit -a -m 'main modify and hash of submodule'
+
+3. push main and submodules simultaneously
+$ git push --recurse-submodules=on-demand
+
+
+
