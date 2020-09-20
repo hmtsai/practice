@@ -44,6 +44,12 @@ $ git push --recurse-submodules=on-demand
 
 if on branch, work not yet finish; commit the temp work (WIP) for record.
 
-# if your branch want to push to remote. setup as below
-git branch --set-upstream-to=origin/master [your branch name]
+######################################################
+# if you are on a branch, which is branch from master;
+# and you wish on this branch to push to origin
+# git push origin [local branch]:[remote branch]
+######################################################
+$ git push origin HEAD:master
+
+
 
