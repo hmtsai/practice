@@ -27,5 +27,15 @@ $ git commit -a -m 'main modify and hash of submodule'
 3. push main and submodules simultaneously
 $ git push --recurse-submodules=on-demand
 
+##################################################################################
+# branch
+##################################################################################
+- show all branches
+$ git branch
+
+- create new branch and checkout on the branch
+$ git checkout -b [branch_work]
+
+
 
 
