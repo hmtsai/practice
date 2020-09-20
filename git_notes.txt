@@ -48,8 +48,15 @@ if on branch, work not yet finish; commit the temp work (WIP) for record.
 # if you are on a branch, which is branch from master;
 # and you wish on this branch to push to origin
 # git push origin [local branch]:[remote branch]
+# or
+# git push origin HEAD:[remote branch]
 ######################################################
+$ git push origin develop:master
 $ git push origin HEAD:master
+
+Note: if develop or HEAD leave empty, would delete [remote branch] !!!
+
+
 
 
 
