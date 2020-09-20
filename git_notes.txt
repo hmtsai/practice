@@ -56,6 +56,28 @@ $ git push origin HEAD:master
 
 Note: if develop or HEAD leave empty, would delete [remote branch] !!!
 
+######################################################
+setup a remote for others clone/pull/push
+######################################################
+
+at /path/project, init git; set remote origin; push origin
+$ git init .
+$ git add .
+$ git commit -m 'init commit'
+$ git remote add origin /path/project/.git
+$ git push origin master
+
+at /path/test
+$ git clone /path/project/.git project
+
+at /path/test/project/
+work and modify
+$ git push
+######################################################
+
+
+
+
 
 
 
