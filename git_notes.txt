@@ -36,6 +36,15 @@ $ git branch
 - create new branch and checkout on the branch
 $ git checkout -b [branch_work]
 
+- working on branch_work;
+  - finished the work; commit the work
+- change back to master
+$ git rebase [branch_work];
+$ git push --recurse-submodules=on-demand
+
+if on branch, work not yet finish; commit the temp work (WIP) for record.
+
+
 
 
 
